@@ -1,6 +1,6 @@
 const Observable = require('./Observable');
 const chai = require('chai');
-const { expect, spy } = chai;
+const { expect } = chai;
 
 
 describe('Observable', () => {
@@ -30,8 +30,6 @@ describe('Observable', () => {
     observable.unsubscribe(subscriber);
     observable.notify('notify text value with no subscriber');
     expect(capturedEventValue).to.be.null;
-
-
   });
 });
 
