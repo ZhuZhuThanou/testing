@@ -2,9 +2,7 @@ const ConnectionSingleton = (function(){
   let instance;
 
   function init(){
-    // create some db connection
-    const _aConnection = new Object();
-       
+           
     function query(sql){
       console.log('run query:', sql);
       return [];
@@ -37,4 +35,4 @@ const ConnectionSingleton = (function(){
 
 })();
 
-module.exports = ConnectionSingleton;
+export default ConnectionSingleton;
