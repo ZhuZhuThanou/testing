@@ -12,12 +12,15 @@ const reverseObserver = text => {
 observable.subscribe(echoObserver);
 observable.subscribe(reverseObserver);
 
-(async () =>{
+(async () => {
   let response = await prompts({
     type: 'text',
     name: 'textValue',
     message: 'Enter some text (type q to quit):'
   });
+  if ('q' === response.textValue) {
+    return;
+  }
   observable.notify(response.textValue);
 })();
 
