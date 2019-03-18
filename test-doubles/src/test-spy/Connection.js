@@ -1,7 +1,7 @@
 class DBConnection {
 
   invokeSql(sql) {
-    console.log('do some work');
+    console.log(sql);
   }
 }
 
