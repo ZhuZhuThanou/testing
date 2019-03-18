@@ -1,0 +1,17 @@
+{
+  "name": "test-double",
+  "version": "1.0.0",
+  "description": "test double patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha src/**/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}
