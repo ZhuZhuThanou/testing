@@ -1,6 +1,7 @@
-const Observable = require('./Observable');
 const chai = require('chai');
 const { expect } = chai;
+
+const Observable = require('./Observable');
 
 
 describe('Observable', () => {
