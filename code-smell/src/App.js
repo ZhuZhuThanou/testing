@@ -6,11 +6,8 @@ class App extends Component {
   render() {
     return (
       <div>
-         <h2>Hello World</h2>
-         <Link to='/login'><h3>Login</h3></Link>
+         <h2>Simple note taker</h2>
           <Link to='/noteform'><h3>Add note</h3></Link>
-          <Link to='/registration'><h3>Registration</h3></Link>
-          
           {
             this.props.notes.map(note => {
               return (<div key={note.id}><h3>{note.text}</h3></div>);
@@ -22,7 +19,6 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log('mapStateToProps', state);
   return {notes: [...state.notes]};
 }
 export default connect(mapStateToProps, null)(App);

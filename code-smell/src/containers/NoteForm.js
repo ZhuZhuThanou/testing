@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addNote } from '../actions';
  
-class NoteForm extends Component {
+export class NoteForm extends Component {
 
   constructor() {
     super();
@@ -16,8 +16,9 @@ class NoteForm extends Component {
   } 
 
   addNoteToStore() {
-    console.log('NoteForm addNoteToStore', {...this.state});
-    this.props.addNote({...this.state});
+    if (!this.props.isTest) {
+      this.props.addNote({...this.state});
+    }
     this.setState({text: ''});
   }
 
@@ -30,9 +31,9 @@ class NoteForm extends Component {
           <Form>
             <FormGroup>
               <FormLabel>Note</FormLabel>
-              <FormControl value={this.state.text} onChange={(event) => this.updateText(event.target.value)} />
+              <FormControl id="noteForm-noteInput" value={this.state.text} onChange={(event) => this.updateText(event.target.value)} />
             </FormGroup>
-            <Button onClick={() => this.addNoteToStore()}>Add note</Button>
+            <Button id="noteForm-addButton" onClick={() => this.addNoteToStore()}>Add note</Button>
           </Form>
         </div>
       </div>

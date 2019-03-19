@@ -11,13 +11,3 @@ export function addNote(note) {
     note
   }
 }
-
-/**
- * 
- * @param {*} registration {name, address, state, zip}
- */
-export function createRegistration(registration) {
-  return {
-
-  }
-}

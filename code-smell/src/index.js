@@ -21,9 +21,7 @@ const Wrapper = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={App} />
-          <Route path='/login' component={Login} />
           <Route path='/noteform' component={NoteForm} />
-          <Route path='/registration' component={Registration} />
         </Switch>
       </BrowserRouter>
   </Provider>
