@@ -1,3 +1,29 @@
 body {
+  padding: 5%;
   text-align: center;
 }
+
+.form  {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 100px;
+}
+
+.form-group {
+  text-align: left;
+}
+.form-label {
+  margin-left: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.form-control {
+  margin: 10px;
+  
+}
+
