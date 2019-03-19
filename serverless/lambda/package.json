@@ -1,0 +1,16 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "chrome-aws-lambda": "^1.13.0",
+    "puppeteer-core": "^1.13.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.39.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
