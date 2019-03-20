@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+.foobarInput {
+  margin: 10px;
+  font-size: 2em;
+  padding: 10px;
+
+}
+
+.foobarButton {
+  font-size: 2em;
+  padding: 10px;
+}

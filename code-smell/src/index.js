@@ -8,10 +8,8 @@ import rootReducer from './reducers';
 
 import App from './App';
 import NoteForm from './containers/NoteForm';
-import Registration from './containers/Registration';
 
 import './index.css';
-import Login from './containers/Login';
 
 const store = createStore(rootReducer);
 const Wrapper = () => {
