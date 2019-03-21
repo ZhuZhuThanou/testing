@@ -1,0 +1,16 @@
+{
+  "name": "interface-segregation",
+  "version": "1.0.0",
+  "description": "interface segregation",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha src/**/*.test.js"
+  },
+  "dependencies": {
+    "implement-js": "0.0.26"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
