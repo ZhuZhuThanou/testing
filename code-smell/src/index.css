@@ -24,6 +24,101 @@ body {
 
 .form-control {
   margin: 10px;
-  
 }
 
+.large-section {
+  text-align: left;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: black;
+  border-radius: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+}
+
+
+.large-status-label {
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.large-status-value {
+  font-weight: bold;
+}
+
+/* Create three equal columns that floats next to each other */
+.large-status-column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.large-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.large-data-row {
+  background: lightblue;
+  margin: 1px;
+}
+
+.large-data-row:hover {
+  cursor: pointer;
+}
+.large-data-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.large-issue-column-1 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+
+.large-issue-column-2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.large-issue-column-3 {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+.large-issue-column-4 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+}
+
+.large-issue-header {
+  font-weight: bold;
+}
+
+.large-form-section {
+  padding: 10px;
+}
+
+.large-form-label {
+  padding: 5px;
+  margin: 5px;
+}
+
+.large-form-input {
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  padding: 0px  20px  0px 20px;
+
+  margin-left: 20px;
+}

@@ -7,7 +7,9 @@ import { createStore } from 'redux'
 import rootReducer from './reducers';
 
 import App from './App';
-import NoteForm from './containers/NoteForm';
+import NoteForm from './containers/Note/NoteForm';
+import Large from './containers/Large/Large';
+import Small from './containers/Build/Small';
 
 import './index.css';
 
@@ -20,6 +22,8 @@ const Wrapper = () => {
         <Switch>
           <Route exact path='/' component={App} />
           <Route path='/noteform' component={NoteForm} />
+          <Route path='/large' component={Large} />
+          <Route path='/small' component={Small} />
         </Switch>
       </BrowserRouter>
   </Provider>

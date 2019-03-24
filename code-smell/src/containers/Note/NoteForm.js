@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormLabel, FormControl, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { addNote } from '../actions';
+import { addNote } from '../../actions';
  
 export class NoteForm extends Component {
 

@@ -24,7 +24,6 @@ describe('NoteForm', () => {
   });
 
   it('note bahviour', () => {
-
     const inputValue = 'A note test';
     const addNote = (note) => {
       expect(note.text).toEqual(inputValue);
