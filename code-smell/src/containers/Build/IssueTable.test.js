@@ -3,14 +3,17 @@ import { shallow } from 'enzyme';
 
 import IssueTable from './IssueTable';
 
-let issues = [{
-          id: 1,
-          component: 'test componet',
-          description: 'code smell badly',
-          status: 'Open'
-         }]
+
 
 describe('<IssueTable>', () => {
+  
+  const issues = [{
+    id: 1,
+    component: 'test componet',
+    description: 'code smell badly',
+    status: 'Open'
+   }];
+
   it('has the components', () => {
     let wrapper = shallow(<IssueTable issues={issues}/>);
     expect(wrapper.find('.large-issue-header')).toHaveLength(4);

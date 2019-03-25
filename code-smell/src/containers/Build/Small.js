@@ -54,11 +54,13 @@ class Small extends Component {
       <Status status={{...this.state.status}} />
 
       <h3>Issues</h3>  
-      <IssueTable issues={issues} handleSelect={this.selectIssue}/>
+      <IssueTable issues={issues} 
+          handleSelect={this.selectIssue}/>
       
       <h3>Details</h3>
       <IssueForm issue={{...this.state.selectedIssue}} 
-            handleStatusChange={this.selectStatus} handleSaveStatus={this.saveSelectedStatus}/>
+            handleStatusChange={this.selectStatus} 
+            handleSaveStatus={this.saveSelectedStatus}/>
       
     </div>);
   }
