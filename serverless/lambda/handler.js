@@ -30,12 +30,6 @@ module.exports.tesuto = async (event, context) => {
     
     result = await page.title();
 
-    // const WEB_SELECTOR = '#duckbar_static > li:nth-child(1) > a';
-
-    // let webReference = await page.evaluate((selector) => {
-    //   return document.getElementsByClassName(selector)[0].href;
-    // }, WEB_SELECTOR);
-
   } catch (error) {
     return context.fail(error);
   } finally {

@@ -10,8 +10,3 @@ class MagicKey {
 const MagicKeySingleton  = new MagicKey();
 Object.freeze(MagicKeySingleton);
 module.exports = { getInstance: () => { return MagicKeySingleton }};
-
-// not singleton 
-// module.exports = { getInstance: () => {
-//     return new MagicKey();
-//   }};

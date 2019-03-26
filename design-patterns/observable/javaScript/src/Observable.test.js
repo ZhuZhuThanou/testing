@@ -3,7 +3,6 @@ const { expect } = chai;
 
 const Observable = require('./Observable');
 
-
 describe('Observable', () => {
 
   let observable = null;
